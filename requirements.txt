@@ -1,3 +1,6 @@
 scrapy
+scrapinghub[msgpack]
 shub
 bs4
+jupyter
+pandas
