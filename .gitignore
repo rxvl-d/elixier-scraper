@@ -94,3 +94,6 @@ ENV/
 
 # Intellij
 .idea
+
+# Data
+data
