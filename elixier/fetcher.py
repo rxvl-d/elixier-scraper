@@ -26,3 +26,6 @@ class OERItemFetcher(object):
         oer_frame['domain'] = oer_frame.url.str.extract('https?://(.*?)/.*')
         oer_frame['is_pdf'] = oer_frame.url.str.endswith('pdf')
         return oer_frame
+
+    def get_df_cached(self, data_dir='../data/'):
+        return pd.read_csv(data_dir + 'elixier_physics')

@@ -5,21 +5,16 @@ from bs4 import BeautifulSoup, element
 class ElixierSpider(scrapy.Spider):
     name = 'elixier-spider'
 
-    start_urls = ["https://www.bildungsserver.de/elixier/elixier2_list.php?"
-                  "ckd=no&"
-                  "mtz=10&"
-                  "suche=erweitert&"
-                  "feldname1=Systematikpfad&"
-                  "feldinhalt1=%22MATHEMATISCH-NATURWISSENSCHAFTLICHE+F%C3%84CHER%22&"
-                  "bool1=and&"
-                  "feldname2=Systematikpfad&"
-                  "feldinhalt2=PHYSIK&"
-                  "BoolSelect_2=AND&"
-                  "bool2=and&"
-                  "feldname3=LizenzFac&"
-                  "feldinhalt3=%22CC-BY-NC-SA%22&"
-                  "BoolSelect_3=AND&"
-                  "bool3=and"]
+    start_urls = ["https://www.bildungsserver.de/elixier/elixier2_list.php?" \
+        "feldname2=Systematik%2FFach&" \
+        "feldinhalt2=%22mathematisch-naturwissenschaftliche+F%C3%A4cher%22&" \
+        "bool2=and&" \
+        "feldname3=Systematik%2FFach&" \
+        "feldinhalt3=%22Physik%22&" \
+        "bool3=and&" \
+        "&" \
+        "suche=erweitert&" \
+        "t=Suchen"]
 
     def parse(self, response, position=0):
         metadata_links = []
