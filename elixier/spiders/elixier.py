@@ -10,7 +10,7 @@ class ElixierSpider(scrapy.Spider):
         "feldinhalt2=%22mathematisch-naturwissenschaftliche+F%C3%A4cher%22&" \
         "bool2=and&" \
         "feldname3=Systematik%2FFach&" \
-        "feldinhalt3=%22Physik%22&" \
+        "feldinhalt3=%22Chemie%22&" \
         "bool3=and&" \
         "&" \
         "suche=erweitert&" \
