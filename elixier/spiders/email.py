@@ -5,7 +5,7 @@ from tld import get_tld
 class ElixierSpider(scrapy.Spider):
     name = 'email-spider'
     greedy = True
-    email_regex = re.compile(r"[-.a-z]+@[^@\s\.]+\.[.a-z]{2,3}")
+    email_regex = re.compile(r"[-.a-z]+@[^@\-\s\.]+\.[.a-z]{2,3}")
     forbidden_keys = ['tel:', 'mailto:', '.jpg', '.pdf', '.png']
 
     def __init__(self, domain, **kwargs):
