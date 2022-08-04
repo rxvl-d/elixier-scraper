@@ -4,3 +4,4 @@ shub
 bs4
 jupyter
 pandas
+tld
